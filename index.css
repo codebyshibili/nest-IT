@@ -100,22 +100,22 @@ z-index: 1;
 }
 
 .banner-content {
- width: 60%;
- height: 300px;
+ width: 50%;
+ height: 200px;
 position: relative;
-z-index: 2;
+z-index: 1;
 display: flex;
 flex-direction: column;
 padding-left: 5%;
 padding-right: 5%;
 justify-content: center;
 background-color:white;
-border-top-right-radius: 180px;
+border-top-right-radius: 200px;
 gap: 10px;
 }
 
 .banner-content h1{
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-family: "Syne", serif;
   background: linear-gradient(90deg, #648cff, #a07eff);
   -webkit-background-clip: text;
@@ -239,7 +239,7 @@ gap: 10px;
   border-radius: 25px;
 }
 .why img{
-  width:150px;
+  width:80px;
 }
 .why h3{
   color: white;
@@ -337,8 +337,12 @@ gap: 20px;
   width: 100%;
   padding: 5%;
   display: flex;
+  padding-bottom: 2%;
+  padding-top: 2%;
   flex-direction: column;
+  /* background-color: aquamarine; */
 }
+
 .service-title{
   width: 100%;
   display: flex;
@@ -353,6 +357,7 @@ gap: 20px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  margin-top: 2%;
 }
 
 .service-container{
@@ -370,11 +375,11 @@ gap: 20px;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  /* background-color: rgb(26, 65, 193); */
+  /* background-color: whitesmoke; */
 }
 
 .service img{
-  width: 600px;
+  width: 600px; 
   height: 400px;
   object-fit: cover;
   border-radius: 25px;
@@ -397,11 +402,141 @@ gap: 20px;
 .service-cont h2{
   font-size: 2rem;
   font-family: "Syne", serif;
-  color: black;
+  color: rgb(6,54,85);
 }
 .service-cont p{
   font-family: 1rem;
   font-family: "Poppins", serif;
   color: rgb(6,54,85);
   text-align: justify;
+}
+
+
+/* .......products.......... */
+
+.products-container{
+  width: 100%;
+  padding: 5%;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.product-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+.product-title h2{
+  font-size: 3rem;
+  font-family: "Syne", serif;
+  background: linear-gradient(90deg, #648cff, #a07eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+
+.product-slider {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 10px;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+  margin-top: 3%;
+}
+.product-slider::-webkit-scrollbar{
+  display: none;
+}
+.product-slider img {
+  width: 350px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border-radius: 25px;
+}
+
+
+
+/* ............partners........... */
+
+.partners-container{
+  width: 100%;
+  padding: 5%;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.partners-title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.partners-title h2{
+  font-size: 2rem;
+  font-family: "Syne", serif;
+  color: rgb(6,54,85);
+  margin-top: 5%;
+}
+.partners-title p{
+font-family: 1rem;
+font-family: "Poppins", serif;
+color: rgb(6,54,85);
+
+}
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 2%;
+}
+
+td {
+  width:25%;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid rgb(6,54,85);
+}
+
+table img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;  
+}
+
+table p{
+  font-size: 1rem;
+  font-family: "Syne", serif;
+  color: rgb(6,54,85);
+
+}
+
+
+
+
+/* ...........footer.......... */
+
+.footer{
+  width: 100%;
+  padding: 2%;
+  background-color: rgb(6,54,85) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
