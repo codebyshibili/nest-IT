@@ -9,6 +9,7 @@ body{
   display: flex;
   flex-direction: column;
   background-color: white;
+  overflow-x: hidden;
 }
 /* ..............navbar.................. */
 
@@ -20,9 +21,8 @@ body{
   background-color:white;
   position: absolute;
   top: 0;
+  left: 5%;
   z-index: 1000;
-  left: 5%; 
-  right: 5%; 
   margin-top: 2%;
  border-radius: 25px;
 }
@@ -153,6 +153,7 @@ gap: 10px;
     justify-content: center;
     gap: 50px;
     padding-top: 0;
+    overflow: hidden;
   }
   .about-container img{
     width: 600px;
@@ -215,6 +216,7 @@ gap: 10px;
   /* background-color:whitesmoke; */
   margin-left: 5%;
   border-radius: 25px;
+  overflow: hidden;
 }
 .why-title{
   width: 100%;
@@ -230,6 +232,7 @@ gap: 10px;
   font-size: 2rem;
   font-family: "Syne", serif;
   color: rgb(6,54,85);
+  text-align: center;
 }
 .why-container{
   width: 100%;
@@ -278,6 +281,7 @@ gap: 10px;
   align-items:center;
   justify-content: center;
   overflow: hidden;
+  padding: 2%;
 }
 
 .banner2-video {
@@ -302,7 +306,7 @@ z-index: 1;
 }
 
 .banner2-content {
- width: 60%;
+ width: 100%;
  height: 300px;
 position: relative;
 z-index: 2;
@@ -385,6 +389,7 @@ gap: 20px;
   width: 100%;
   display: flex;
   padding: 5%;
+  padding-bottom: 0;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -497,6 +502,7 @@ gap: 20px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  text-align: center;
 }
 .partners-title h2{
   font-size: 2rem;
@@ -552,4 +558,140 @@ table p{
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+  /* nav */
+
+  .navbar-container{
+    height: 60px;
+    padding-right: 5%;
+  }
+  .navlogo-section{
+   width: auto;
+   padding-left: 5%;
+
+  }
+  .navlogo-section img{
+   width: 80px;
+  }
+  .nav-items {
+   display: block;
+   position: fixed;
+   top: 0;
+   right: -100%;
+   background: linear-gradient(90deg, #648cff, #a07eff);
+   width: 50%;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   font-family: "Poppins", serif;
+   border-radius: 10px;
+   overflow-x: hidden;
+ }
+
+.nav-items a {
+   line-height: 10px;
+   color:white;
+}
+
+.nav-items label {
+   position: absolute;
+   top: -1%;
+   right: 5%;
+}
+.nav-items label img{
+   padding: 5%;
+}
+.nav-items input {
+   display: block;
+}
+
+#checking:checked~.nav-items {
+   right: 0;
+}
+
+
+.navbar-container label {
+   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.navbar-container label img{
+   width: 25px;
+   margin: 50%;
+}
+
+
+/* banner */
+.banner{
+  height: 100vh;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.banner-content{
+  width: 100%;
+  border-top-right-radius:0px;
+  border: none;
+  background-color: transparent;
+}
+
+/* about */
+
+.about-container{
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+
+.about-container img{
+  align-self: center;
+  margin-top: 10%;
+  width: 100%;
+  padding: 0;
+}
+
+/* why */
+.why-container{
+  grid-template-columns: repeat(1,1fr);
+}
+.why{
+  height: 250px;
+}
+/* .banner-2 */
+
+.banner2-content{
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+}
+
+
+.service:nth-child(1) { flex-direction:column ; }
+.service:nth-child(2) { flex-direction: column-reverse; }
+.service:nth-child(3) { flex-direction: column;}
+.service:nth-child(4) { flex-direction: column-reverse;}
+
+.service img{
+  width: 100%;
+}
+
+td{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
 }
