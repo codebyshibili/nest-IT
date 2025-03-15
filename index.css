@@ -552,7 +552,7 @@ table p{
 
 .footer{
   width: 100%;
-  padding: 2%;
+  height: 100px;
   background-color: rgb(6,54,85) ;
   display: flex;
   align-items: center;
@@ -636,7 +636,7 @@ table p{
 
 /* banner */
 .banner{
-  height: 100vh;
+  height: 80vh;
   align-items: center;
   padding-left: 5%;
 }
@@ -646,6 +646,9 @@ table p{
   border-top-right-radius:0px;
   border: none;
   background-color: transparent;
+}
+.banner-content h1{
+  font-size: 1.5rem;
 }
 
 /* about */
@@ -663,22 +666,41 @@ table p{
   width: 100%;
   padding: 0;
 }
+.about-cont h2{
+  font-size: 1.2rem;
+}
 
 /* why */
+.why-title h2{
+  font-size: 1.2rem;
+}
 .why-container{
   grid-template-columns: repeat(1,1fr);
 }
+
 .why{
   height: 250px;
 }
 /* .banner-2 */
-
-.banner2-content{
-  width: 100%;
-  padding: 5%;
-  text-align: center;
+.banner-2{
+  height: 60vh;
 }
 
+.banner-2 h2{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.banner2-content button{
+   padding: 3%;
+}
+
+
+.service-title h2{
+  font-size: 1.5rem;
+}
+.service-cont h2{
+  font-size: 1.2rem;
+}
 
 .service:nth-child(1) { flex-direction:column ; }
 .service:nth-child(2) { flex-direction: column-reverse; }
@@ -689,8 +711,13 @@ table p{
   width: 100%;
 }
 
+.product-title h2{
+  font-size: 1.8rem;
+}
+
 td{
-  width: 90%;
+  width: 100%;
+  height: 150px;
   display: flex;
   flex-direction: column;
 }

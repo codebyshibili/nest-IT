@@ -208,7 +208,7 @@
 
 .footer{
   width: 100%;
-  padding: 2%;
+  height: 100px;
   background-color: rgb(6,54,85) ;
   display: flex;
   align-items: center;
@@ -216,3 +216,99 @@
   color: white;
 }
 
+
+
+
+
+
+
+  
+@media (max-width:768px){
+
+  /* nav */
+
+  .navbar-container{
+    height: 60px;
+    padding-right: 5%;
+  }
+  .navlogo-section{
+   width: auto;
+   padding-left: 5%;
+
+  }
+  .navlogo-section img{
+   width: 80px;
+  }
+  .nav-items {
+   display: block;
+   position: fixed;
+   top: 0;
+   right: -100%;
+   background: linear-gradient(90deg, #648cff, #a07eff);
+   width: 50%;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   font-family: "Poppins", serif;
+   border-radius: 10px;
+   overflow-x: hidden;
+ }
+
+.nav-items a {
+   line-height: 10px;
+   color:white;
+}
+
+.nav-items label {
+   position: absolute;
+   top: -1%;
+   right: 5%;
+}
+.nav-items label img{
+   padding: 5%;
+}
+.nav-items input {
+   display: block;
+}
+
+#checking:checked~.nav-items {
+   right: 0;
+}
+
+
+.navbar-container label {
+   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.navbar-container label img{
+   width: 25px;
+   margin: 50%;
+}
+
+
+/* banner */
+.banner{
+  height: 60vh;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.banner-content{
+  width: 100%;
+  border-top-right-radius:0px;
+  border: none;
+  background-color: transparent;
+}
+.banner-content h1{
+  font-size: 1.5rem;
+}
+
+iframe{
+  height: 40vh;
+}
+}
